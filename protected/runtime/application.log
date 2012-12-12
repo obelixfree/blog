@@ -1,0 +1,17 @@
+2012/12/10 14:20:45 [error] [php] Trying to get property of non-object (C:\www\Apache2.2\htdocs\2012PHP\blog\protected\components\UserIdentity.php:20)
+Stack trace:
+#0 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 C:\www\Apache2.2\htdocs\2012PHP\blog\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\www\Apache2.2\htdocs\2012PHP\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\www\Apache2.2\htdocs\2012PHP\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/2012PHP/blog/index.php?r=site/login
+in C:\www\Apache2.2\htdocs\2012PHP\blog\protected\components\UserIdentity.php (20)
+in C:\www\Apache2.2\htdocs\2012PHP\blog\protected\models\LoginForm.php (52)
+in C:\www\Apache2.2\htdocs\2012PHP\blog\protected\controllers\SiteController.php (94)
