@@ -25,6 +25,7 @@ class UserIdentity extends CUserIdentity
                 $this->_id=$record->id;
                 $this->username=$record->username;
                 $this->errorCode=self::ERROR_NONE;
+				echo "Nici o eroare";
             }
             return $this->errorCode==self::ERROR_NONE;
 	}
